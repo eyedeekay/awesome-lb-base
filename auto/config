@@ -10,4 +10,5 @@ lb config noauto \
     --parent-distribution stretch \
     --debootstrap-options "--variant=minbase --include=busybox-syslogd" \
     --initsystem sysvinit \
-    --parent-mirror-bootstrap http://ftp.us.debian.org/debian/
+    --parent-mirror-bootstrap http://ftp.us.debian.org/debian/ \
+    "$@"
