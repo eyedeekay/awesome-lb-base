@@ -9,8 +9,14 @@ expose:
 clean:
 	sudo lb clean; echo "cleaned"
 
-cleaner:
-	sudo lb clean
+clean-cache:
+	sudo lb clean --cache
+
+clean-config:
+	rm -rf config; \
+	make cleaner
+	make config
+	make packages
 
 config:
 	lb config
