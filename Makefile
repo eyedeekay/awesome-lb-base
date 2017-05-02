@@ -21,6 +21,9 @@ clean-config:
 config:
 	lb config
 
+config-nonfree:
+	lb config --archive-areas "main,contrib,nonfree"
+
 packages:
 	cd config/package-lists/ && \
 	rm build.list.chroot build.list.binary 2> /dev/null ; \
