@@ -28,8 +28,6 @@ packages:
 	cd config/package-lists/ && \
 	rm build.list.chroot build.list.binary 2> /dev/null ; \
 	echo "aircrack-ng" >> build.list.chroot && \
-	echo "awesome" >> build.list.chroot && \
-	echo "awesome-extra" >> build.list.chroot && \
 	echo "apg" >> build.list.chroot && \
 	echo "apparmor" >> build.list.chroot && \
 	echo "apparmor-docs" >> build.list.chroot && \
@@ -37,6 +35,8 @@ packages:
 	echo "apparmor-notify" >> build.list.chroot && \
 	echo "apparmor-profiles" >> build.list.chroot && \
 	echo "apparmor-profiles-extra" >> build.list.chroot && \
+	echo "awesome" >> build.list.chroot && \
+	echo "awesome-extra" >> build.list.chroot && \
 	echo "apparmor-utils" >> build.list.chroot && \
 	echo "bluetooth" >> build.list.chroot && \
 	echo "build-essential" >> build.list.chroot && \
@@ -50,10 +50,12 @@ packages:
 	echo "dh-autoreconf" >> build.list.chroot && \
 	echo "dh-golang" >> build.list.chroot && \
 	echo "dh-sysuser" >> build.list.chroot && \
+	echo "firejail" >> build.list.chroot && \
 	echo "git" >> build.list.chroot && \
 	echo "gpgv-static" >> build.list.chroot && \
 	echo "gradm2" >> build.list.chroot && \
 	echo "lftp" >> build.list.chroot && \
+	echo "lynx-cur" >> build.list.chroot && \
 	echo "markdown" >> build.list.chroot && \
 	echo "mat" >> build.list.chroot && \
 	echo "medit" >> build.list.chroot && \
@@ -70,6 +72,8 @@ packages:
 	echo "jackmeter" >> build.list.chroot && \
 	echo "secure-delete" >> build.list.chroot && \
 	echo "suckless-tools" >> build.list.chroot && \
+	echo "ssh" >> build.list.chroot && \
+	echo "sshfs" >> build.list.chroot && \
 	echo "surfraw" >> build.list.chroot && \
 	echo "surfraw-extra" >> build.list.chroot && \
 	echo "tig" >> build.list.chroot && \
@@ -89,6 +93,7 @@ packages:
 
 build:
 	sudo lb build
+	echo "success"
 
 all:
 	make clean ; \
