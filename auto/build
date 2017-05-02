@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+lb build noauto
+
+cp awesome-amd64.hybrid.iso ../
