@@ -30,7 +30,6 @@ packages:
 	echo "aircrack-ng" >> build.list.chroot && \
 	echo "apg" >> build.list.chroot && \
 	echo "apparmor" >> build.list.chroot && \
-	echo "apparmor-docs" >> build.list.chroot && \
 	echo "apparmor-easyprof" >> build.list.chroot && \
 	echo "apparmor-notify" >> build.list.chroot && \
 	echo "apparmor-profiles" >> build.list.chroot && \
@@ -76,6 +75,7 @@ packages:
 	echo "sshfs" >> build.list.chroot && \
 	echo "surfraw" >> build.list.chroot && \
 	echo "surfraw-extra" >> build.list.chroot && \
+	echo "task-laptop" >> build.list.chroot && \
 	echo "tig" >> build.list.chroot && \
 	echo "tlp" >> build.list.chroot && \
 	echo "tlp-rdw" >> build.list.chroot && \
@@ -88,6 +88,7 @@ packages:
 	echo "wikipedia2text" >> build.list.chroot && \
 	echo "whiptail" >> build.list.chroot && \
 	echo "xdm" >> build.list.chroot && \
+	echo "xserver-xorg-input-synaptics" >> build.list.chroot && \
 	echo "youtube-dl" >> build.list.chroot && \
 	ln -s build.list.chroot build.list.binary
 
