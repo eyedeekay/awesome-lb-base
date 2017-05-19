@@ -198,6 +198,8 @@ packages:
 	ln -s build.list.chroot build.list.binary
 
 nonfree-firmware:
+	cd config/package-lists/ && \
+	rm nonfree.list.chroot nonfree.list.binary 2> /dev/null ; \
 	echo "b43-fwcutter" >> nonfree.list.chroot && \
 	echo "firmware-b43-installer" >> nonfree.list.chroot && \
 	echo "firmware-b43legacy-installer" >> nonfree.list.chroot && \
